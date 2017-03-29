@@ -1,1 +1,6 @@
-ADD_SUBDIRECTORY( src )
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8.9 )
+PROJECT ( FooLibrary )
+ADD_LIBRARY( foo        SHARED src/foo.cpp )
+ADD_LIBRARY( foo_static STATIC src/foo.cpp )
+SET_TARGET_PROPERTIES( foo_static PROPERTIES OUTPUT_NAME foo )
+INCLUDE_DIRECTORIES( include )

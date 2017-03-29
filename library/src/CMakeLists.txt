@@ -1,5 +1,0 @@
-PROJECT ( Foo )
-ADD_LIBRARY( foo        SHARED foo.cpp )
-ADD_LIBRARY( foo_static STATIC foo.cpp )
-INCLUDE_DIRECTORIES( ../include )
-SET_TARGET_PROPERTIES( foo_static PROPERTIES OUTPUT_NAME foo )
