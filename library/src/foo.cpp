@@ -1,5 +1,6 @@
 #include <iostream>
-int main(int argc, char* argv[]){
+#include <foo.h>
+
+void foo::bar(){
     std::cout << "Hello World!" << std::endl;
-    return 0;
 }
