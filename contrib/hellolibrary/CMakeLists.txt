@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8.9 )
+PROJECT ( HelloLibrary )
+ADD_LIBRARY( hello_library        SHARED src/hello.cpp )
+ADD_LIBRARY( hello_library_static STATIC src/hello.cpp )
+SET_TARGET_PROPERTIES( hello_library        PROPERTIES OUTPUT_NAME hello )
+SET_TARGET_PROPERTIES( hello_library_static PROPERTIES OUTPUT_NAME hello )
+INCLUDE_DIRECTORIES( include )

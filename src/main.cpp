@@ -1,5 +1,5 @@
-#include <foo.h>
+#include <hello.h>
 int main(int argc, char* argv[]){
-    foo::bar();
+    hello::sayhello();
     return 0;
 }

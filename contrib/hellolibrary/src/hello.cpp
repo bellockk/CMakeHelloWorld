@@ -1,6 +1,6 @@
 #include <iostream>
-#include <foo.h>
+#include <hello.h>
 
-void foo::bar(){
+void hello::sayhello(){
     std::cout << "Hello World!" << std::endl;
 }

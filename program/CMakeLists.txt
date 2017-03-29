@@ -1,6 +1,0 @@
-CMAKE_MINIMUM_REQUIRED( VERSION 2.8.9 )
-PROJECT ( ProgramHello )
-INCLUDE_DIRECTORIES( ../library/include )
-ADD_EXECUTABLE( hello src/main.cpp )
-ADD_SUBDIRECTORY( library )
-TARGET_LINK_LIBRARIES( hello foo )
