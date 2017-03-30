@@ -5,6 +5,12 @@ SET( MINOR 0 )
 SET( PATCH 0 )
 PROJECT ( ProgramHello VERSION "${MAJOR}.${MINOR}.${PATCH}" LANGUAGES CXX )
 
+# Set Global Options
+IF( WIN32 )
+    SET( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS /MP" )
+    SET( CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS /MP" )
+ENDIF()
+
 # Create a List of all Source code.  Do not use GLOB...
 SET( SOURCE src/main.cpp )
 
